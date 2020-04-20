@@ -1,0 +1,148 @@
+
+    * {box-sizing: border-box;}
+
+    
+    .topnav {
+      overflow: hidden;
+      background-color: white;
+    }
+    
+   
+    .topnav a {
+      float: right;
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    
+    .topnav a:hover {
+      background-color: rgb(0, 150, 250);
+      color: black;
+    }
+    
+  
+    .topnav a.active {
+      background-color: #64b6ff;
+      color: white;
+    }
+
+    
+    
+    .topnav input[type=text] {
+      padding: 6px;
+      margin-top: 8px;
+      font-size: 17px;
+      border: none;
+    }
+    
+   
+    @media screen and (max-width: 600px) {
+      .topnav .search-container {
+        float: none;
+      }
+      .topnav a, .topnav input[type=text], .topnav .search-container button {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+      }
+      .topnav input[type=text] {
+        border: 1px solid #ccc;
+      }
+    }
+
+
+    body {
+      background: #4EAFCD url("bg.png") repeat;
+      position: relative;
+      font-family: 'Oswald', sans-serif;
+    }
+    
+    .container {
+      margin: auto;  
+      padding: 215px 0;
+    }
+    
+    #loginform {	
+      background-color: #f7f7f7;
+      display: block;
+      height: 400px;
+      margin: 0 auto;	
+      outline: solid 10px rgba(0,0,0,0.10);
+      width: 350px;
+      padding: 30px;
+    }
+    
+    .login-username:before { 
+      content: "Login Form";
+      color: #4c4c4c;	
+      font-size: 20px;
+      text-transform: uppercase;
+      margin: 0;
+      text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+    } 
+     
+     .login-username label, .login-password label {
+      display: none;
+      text-indent: -9999px;
+    }
+     
+    .login-username .input{ 
+      margin-top: 15px;
+     } 
+    
+    .login-password .input { margin-top: -14px;}
+     
+     ::-moz-placeholder {  
+       color: #4c4c4c;
+       text-transform: uppercase;
+    }
+    
+    ::-webkit-input-placeholder {
+       color: #5d5b5b;
+       text-transform: uppercase;
+    }
+    
+    .input { 
+      background-color: #fff;
+      cursor: text;
+      border: solid 1px #dedede; 
+      box-sizing: border-box;
+      color: #4c4c4c;
+      font: 400 13px/18px 'oswald';
+      height: 40px;
+      margin-bottom: -18px;
+      outline: none;
+      padding: 8px 15px;
+      transition: border 0.3s;
+      width:100%;
+    }
+
+    
+    .button-primary {
+      background-color: #64B6FF;
+      border: solid 1px transparent; 
+      box-sizing: border-box;
+      color: #fff;
+      cursor: pointer;
+      font:  14px/36px 'oswald';
+      height: 42px;
+      letter-spacing: 1px;
+      margin-top: -11px;
+      outline: none;
+      text-align: center;
+      text-transform: uppercase;
+      transition: background-color 0.5s;
+      width: 100%;
+    }
+    
+    .button-primary:hover {
+      background-color: #0080FF;
+    }
+    
